@@ -24,9 +24,6 @@ export class ScreenSharingPeer extends Peer {
             config: {
                 iceServers: [
                     {
-                        urls: 'stun:stun.l.google.com:19302'
-                    },
-                    {
                         urls: TURN_SERVER.split(','),
                         username: TURN_USER,
                         credential: TURN_PASSWORD
